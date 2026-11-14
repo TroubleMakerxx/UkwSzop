@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using UkwSzop.DAL;
 
 namespace UkwSzop.Controllers
 {
