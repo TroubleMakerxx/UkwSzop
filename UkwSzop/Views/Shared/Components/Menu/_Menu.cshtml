@@ -1,0 +1,8 @@
+@model IEnumerable<UkwSzop.Models.Category>
+
+@foreach (var category in Model)
+{
+    <li class="nav-item">
+        <a class="nav-link text-dark" href="@Url.Action("FilmsList", "Films", new { categoryName = category.Name })">@category.Name</a>
+    </li>
+}

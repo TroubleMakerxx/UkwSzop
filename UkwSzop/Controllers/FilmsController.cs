@@ -1,11 +1,11 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using UkwSzop.DAL;
 
 namespace UkwSzop.Controllers
 {
-    public class FilmsController
-    {
-        public class FilmsController : Controller
+      public class FilmsController : Controller
         {
             FilmsContext db;
 
@@ -28,5 +28,4 @@ namespace UkwSzop.Controllers
                 return View();
             }
         }
-    }
 }
