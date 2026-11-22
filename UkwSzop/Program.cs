@@ -26,9 +26,13 @@ app.UseAuthorization();
 app.MapStaticAssets();
 
 app.MapControllerRoute(
+    name: "categories",
+    pattern: "kategoria/{categoryName}",
+    defaults: new { controller = "Films", action = "FilmsList" });
+
+app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
-
 
 app.Run();
